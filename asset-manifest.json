@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.7cda0caf.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.7dbae72f.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.5c4c6d12.js",
     "static/js/332.818cc950.chunk.js": "/goit-react-hw-08-phonebook/static/js/332.818cc950.chunk.js",
+    "static/js/79.798b978a.chunk.js": "/goit-react-hw-08-phonebook/static/js/79.798b978a.chunk.js",
     "static/js/665.408d8b26.chunk.js": "/goit-react-hw-08-phonebook/static/js/665.408d8b26.chunk.js",
     "static/js/690.4a85bffa.chunk.js": "/goit-react-hw-08-phonebook/static/js/690.4a85bffa.chunk.js",
-    "static/js/79.798b978a.chunk.js": "/goit-react-hw-08-phonebook/static/js/79.798b978a.chunk.js",
     "static/js/568.b609792f.chunk.js": "/goit-react-hw-08-phonebook/static/js/568.b609792f.chunk.js",
     "static/media/home-image.png": "/goit-react-hw-08-phonebook/static/media/home-image.1b6a9f0b3604476357f2.png",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.7cda0caf.css.map": "/goit-react-hw-08-phonebook/static/css/main.7cda0caf.css.map",
-    "main.7dbae72f.js.map": "/goit-react-hw-08-phonebook/static/js/main.7dbae72f.js.map",
+    "main.5c4c6d12.js.map": "/goit-react-hw-08-phonebook/static/js/main.5c4c6d12.js.map",
     "332.818cc950.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/332.818cc950.chunk.js.map",
+    "79.798b978a.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/79.798b978a.chunk.js.map",
     "665.408d8b26.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/665.408d8b26.chunk.js.map",
     "690.4a85bffa.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/690.4a85bffa.chunk.js.map",
-    "79.798b978a.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/79.798b978a.chunk.js.map",
     "568.b609792f.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/568.b609792f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.7dbae72f.js"
+    "static/js/main.5c4c6d12.js"
   ]
 }
