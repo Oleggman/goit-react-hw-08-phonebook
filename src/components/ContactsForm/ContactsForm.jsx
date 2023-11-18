@@ -3,8 +3,8 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import Notiflix from 'notiflix';
 import { FormTitle, StyledForm, InputBox, InputLabel, StyledField, SubmitBtn, Error } from './ContactsForm.styled';
-import { selectContacts } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { selectContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 
 const ContactSchema = Yup.object().shape({
   name: Yup.string()

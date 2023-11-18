@@ -5,7 +5,7 @@ import { ContactsForm } from './ContactsForm/ContactsForm'
 import { ContactsBook } from './ContactsBook/ContactsBook'
 import { Filter } from './Filter/Filter'
 import { MainContainer, AppTitle, ContactsList, ContactsTitle } from './App.styled';
-import { fetchContacts } from 'redux/operations';
+import { fetchContacts } from 'redux/contacts/operations';
 
 export default function App() {
   const dispatch = useDispatch();
