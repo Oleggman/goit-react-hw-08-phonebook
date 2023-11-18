@@ -2,7 +2,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import Notiflix from 'notiflix';
-import { FormTitle, StyledForm, InputBox, InputLabel, StyledField, SubmitBtn, Error } from './ContactsForm.styled';
+import {
+  FormTitle, StyledForm, InputBox, InputLabel, StyledField, SubmitBtn, Error
+} from './ContactsForm.styled';
 import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/operations';
 

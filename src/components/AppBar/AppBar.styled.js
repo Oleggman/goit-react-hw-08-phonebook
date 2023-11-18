@@ -10,7 +10,6 @@ export const Header = styled.header`
 
 `;
 
-
 export const AppTitle = styled.h1`
   display: flex;
   align-items: center;

@@ -3,7 +3,6 @@ import homeImage from '../../images/home-image.png'
 import {
   HomeContaier, HomeImage, HomeTitle, HomeSectionDesc, HomeLink
 } from './HomeSection.styled';
-import { Link } from 'react-router-dom';
 
 export const HomeSection = () => {
   const { isLoggedIn } = useAuth();
