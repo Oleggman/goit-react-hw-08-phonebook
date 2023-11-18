@@ -6,9 +6,21 @@ import { Register } from 'pages/Register';
 import { Login } from 'pages/Login';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { refreshUser } from 'redux/auth/operations';
+import { useAuth } from 'hooks';
 
 export default function App() {
-  return (
+  const dispatch = useDispatch();
+  const { isRefreshing } = useAuth();
+
+  useEffect(() => {
+    dispatch(refreshUser());
+  }, [dispatch]);
+
+  return ( 
+    !isRefreshing &&
     <Routes>
       <Route path='/' element ={<Layout />}>
         <Route index element={<Home />} />

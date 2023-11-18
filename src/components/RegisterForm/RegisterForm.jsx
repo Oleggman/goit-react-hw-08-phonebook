@@ -20,25 +20,18 @@ const RegisterSchema = Yup.object().shape({
   password: Yup.string()
       .trim()
       .min(8, 'Too short password!')
-      .min(50, 'Too long password!')
+      .max(50, 'Too long password!')
       .required('Required'),
 });
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
 
-  const onSubmitForm = e => {
-    e.preventDefault();
+  const onSubmitForm = (values, helpers) => {
+    const { name, email, password } = values;
 
-    const form = e.target;
-    dispatch(
-      register({
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-        password: form.elements.password.value,
-      })
-    );
-    form.reset();
+    dispatch(register({ name, email, password }));
+    helpers.resetForm();
   }
 
   return (

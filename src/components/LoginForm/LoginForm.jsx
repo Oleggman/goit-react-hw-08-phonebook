@@ -22,17 +22,11 @@ const LoginSchema = Yup.object().shape({
 export const LoginForm = () => {
   const dispatch = useDispatch();
 
-  const onSubmitForm = e => {
-    e.preventDefault();
+  const onSubmitForm = (values, helpers) => {
+    const { email, password } = values;
 
-    const form = e.target;
-    dispatch(
-      login({
-        email: form.elements.email.value,
-        password: form.elements.password.value,
-      })
-    );
-    form.reset();
+    dispatch(login({ email, password }));
+    helpers.resetForm();
   }
 
   return (
