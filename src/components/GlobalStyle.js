@@ -11,7 +11,6 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     background: linear-gradient(#141e30, #243b55);
-    padding: 15px;
     box-shadow: inset -1px -1px 8px 8px rgba(0,0,0,.71);
   }
 

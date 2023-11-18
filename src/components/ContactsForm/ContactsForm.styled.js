@@ -12,13 +12,14 @@ export const StyledForm = styled(Form)`
   display: flex;
   max-width: 360px;
   width: 100%;
-  height: 400px;
+  height: fit-content;
   flex-direction: column;
   padding: 40px;
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
+  margin: 0 auto;
 `;
 
 export const InputBox = styled.label`
@@ -27,18 +28,18 @@ export const InputBox = styled.label`
 
 export const InputLabel = styled.span`
   position: absolute;
-  top:0;
+  top: -20px;
   left: 0;
+  color: #03e9f4;
+  font-size: 12px;
   padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
   pointer-events: none;
-  transition: .5s;
 `;
 
 export const StyledField = styled(Field)`
   width: 100%;
   padding: 10px 0;
+  line-height: 1.3;
   font-size: 16px;
   color: #fff;
   margin-bottom: 30px;
@@ -46,14 +47,6 @@ export const StyledField = styled(Field)`
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
-
-  &:focus ~ span,
-  &:valid ~ span {
-    top: -20px;
-    left: 0;
-    color: #03e9f4;
-    font-size: 12px;
-  }
 `;
 
 export const SubmitBtn = styled.button`

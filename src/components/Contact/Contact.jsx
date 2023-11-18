@@ -2,12 +2,12 @@ import { useDispatch } from "react-redux";
 import { ContactItem, DeleteBtn } from "./Contact.styled";
 import { deleteContact } from "redux/contacts/operations";
 
-export const Contact = ({ contact: { id, name, phone }}) => {
+export const Contact = ({ contact: { id, name, number }}) => {
   const dispatch = useDispatch();
   
   return (
     <ContactItem>
-      <p>{name}: {phone}</p>
+      <p>{name}: {number}</p>
       <DeleteBtn type="button" onClick={() => dispatch(deleteContact(id))}>Delete</DeleteBtn>
     </ContactItem>
   );

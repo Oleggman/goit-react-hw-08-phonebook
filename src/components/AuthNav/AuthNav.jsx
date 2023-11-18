@@ -1,14 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { StyledAuthNavLink, StyledAuthNav, AuthIcon } from "./AuthNav.styled";
+import { IoIosLogIn } from "react-icons/io";
+import { PiShootingStarThin } from "react-icons/pi";
 
 export const AuthNav = () => {
   return (
-    <div>
-      <NavLink to="/register">
-        Register
-      </NavLink>
-      <NavLink to="/login">
-        Log In
-      </NavLink>
-    </div>
+    <StyledAuthNav>
+      <StyledAuthNavLink to="/register">
+        <p>Register</p>
+        <AuthIcon><PiShootingStarThin /></AuthIcon>
+      </StyledAuthNavLink>
+
+      <StyledAuthNavLink to="/login">
+        <p>Log In</p>
+        <AuthIcon><IoIosLogIn /></AuthIcon>
+      </StyledAuthNavLink>
+    </StyledAuthNav>
   );
 }

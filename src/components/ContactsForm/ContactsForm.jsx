@@ -14,7 +14,7 @@ const ContactSchema = Yup.object().shape({
         'Invalid name format.'
         )
       .min(3, 'Too short contact name!')
-      .max(50, 'Too long contact name!')
+      .max(20, 'Too long contact name!')
       .required('Required'),
   number: Yup.string()
       .trim()
@@ -22,6 +22,8 @@ const ContactSchema = Yup.object().shape({
         /\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/,
         'Invalid phone number format'
       )
+      .min(3, 'Too short phone number!')
+      .max(20, 'Too long phone number!')
       .required('Required'),
  });
 

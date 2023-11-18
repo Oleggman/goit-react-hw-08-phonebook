@@ -6,15 +6,16 @@ export const FilterBox = styled.div`
 `;
 
 export const InputFilter = styled.input`
-  background-color: #d0c8bc;
-  border: 3px solid #03e9f4;
+  background: rgb(0, 0, 0, 0.4);
+  border: none;
   border-radius: 4px;
   outline: none;
   margin-right: 10px;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
   display: block;
   margin: 0 auto;
+  color: #fff
 `;
 
 export const FilterTitle = styled.p`
