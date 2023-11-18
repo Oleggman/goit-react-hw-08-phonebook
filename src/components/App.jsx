@@ -8,9 +8,9 @@ import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 
 const HomePage = lazy(() => import('../pages/Home'));
+const ContactsPage = lazy(() => import('../pages/Contacts'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
-const ContactsPage = lazy(() => import('../pages/Contacts'));
 
 export default function App() {
   const dispatch = useDispatch();
@@ -20,10 +20,11 @@ export default function App() {
     dispatch(refreshUser());
   }, [dispatch]);
 
-  return ( 
-    !isRefreshing &&
+  return isRefreshing ? (
+      <b>Refreshing user...</b>
+    ) : (
     <Routes>
-      <Route path='/' element ={<Layout />}>
+      <Route path='/' element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route
           path='/register'
