@@ -7,7 +7,7 @@ import { RiContactsBook2Fill } from "react-icons/ri";
 import { useDispatch } from "react-redux";
 import { fetchContacts } from "redux/contacts/operations";
 
-export const Contacts = () => {
+export default function Contacts() {
   const dispatch = useDispatch();
   
   useEffect(() => {

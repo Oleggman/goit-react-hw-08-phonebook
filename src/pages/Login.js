@@ -1,6 +1,6 @@
 import { LoginForm } from "components/LoginForm/LoginForm";
 
-export const Login = () => {
+export default function Login() {
   return (
     <LoginForm />
   );
